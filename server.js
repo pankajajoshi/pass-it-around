@@ -7,11 +7,14 @@ app.get('/', (req, res) => {
   res.send(`
     <html>
     <head>
+    <link rel="stylesheet" href="/styles.css">
       <title>99 Bottles of Beer</title>
     </head>
     <body>
+    <div class="bugdiv">
       <h1>99 Bottles of Beer on the Wall</h1>
       <a href="/98">Take one down, pass it around</a>
+      </div>
     </body>
     </html>
   `);
@@ -28,17 +31,26 @@ app.get('/:number_of_bottles', (req, res) => {
   res.send(`
     <html>
     <head>
+    <link rel="stylesheet" href="/styles.css">
       <title>${numberOfBottles} Bottles of Beer</title>
     </head>
     <body>
+    <div class="bugdiv">
       <h1>${numberOfBottles} Bottles of Beer on the Wall</h1>
       ${link}
+      </div>
       <br/>
       <a href="/">Start Over</a>
     </body>
     </html>
   `);
 });
+
+
+app.get('/styles.css', (req, res) => {
+    res.set('Content-Type', 'text/css');
+    res.sendFile(__dirname + '/styles.css');
+  });
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
@@ -217,7 +229,7 @@ app.listen(port, () => {
 //     let bottleNumber = req.params.bottleNumber
     
 //     let numberBottles = bottles(bottleNumber)
-//     res.status(200).json({message: numberBottles, link: `localhost:5000/${bottleNumber-1}`})
+//     res.status(200).json({message: numberBottles, link: `localhost:3000/${bottleNumber-1}`})
 // })
 
 // function bottles (num) {
