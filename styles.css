@@ -1,0 +1,51 @@
+html{
+    align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cb8080;
+  margin-top: 10%;
+  margin-left: 40%;
+}
+
+h1 {
+  color: #333333;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bottles{
+    font-size: 30px;
+    font-weight:bolder;
+    color:brown;
+
+}
+
+/* .buttondiv,.bugdiv{
+    margin-top: 15%;
+    margin-left:40%;
+}  */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    
+  }
+  
+  .button:hover {
+    background-color: #337c23;
+  }
