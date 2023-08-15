@@ -46,7 +46,11 @@ If there are 0 bottles left, do not show a link to "take one down"
 Add a link to start over, which directs the user back to the home page.
 Hints
 You should use an anchortag with an hrefto link to the next 'page'
-Bonus
+
+<img src="" />
+
+<h2>Bonus</h2>
+
 Have some more fun
 Update your page to be something like
 
@@ -58,3 +62,4 @@ Patch it around
 Make the bugs go down by one, but then have some sort of functionality where the bug count can randomlygo up
 
 You have a lot of freedom to make it work how you want!
+<img src="" />
